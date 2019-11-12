@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adrian Haskin's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Haskin's Portfolio</title>
 </head>
 <body>
     <!-- <header>
     </header> -->
     <!-- <nav></nav> -->
+    <div class="mainBody">
     <div class="splashPage">
-        <img class="splashPage__image">
-        <div class="splashPage__body">
-            I am a web-developer from Brooklyn, New York. I am well versed in Javascript & React.
+        <img class="splashPage__image" src="./images/profile-pic-crop.jpg">
+        <div class="splashPage__splashBody">
+            <div class="splashBody__body">
+                <h1 class="splashBody__title">About Me</h1>
+                <p>
+                I am a web-developer from Brooklyn, New York. I am well versed in Javascript & React.
+                </p>
+            </div>
         </div>
     </div>
     <div class="projectsContainer">
-        <div class="projectsContainer__bulletJournal projectContainer"></div>
-        <div class="projectsContainer__privateClipboard projectContainer"></div>
-        <div class="projectsContainer__quotemark projectContainer"></div> 
+        <h1 class="projectsContainer__title">Projects</h1>
+        <div class="projectsContainer__bulletJournal projectContainer">
+            <img>
+            <div class="bulletJournal__body">
+                <h1 class="bulletJournal__title projectTitle">Bullet Journal</h1>
+                <p class="bulletJournal__description"></p>
+            </div>
+        </div>
+        <div class="projectsContainer__privateClipboard projectContainer">
+            <img>
+            <div class="privateClipboard__body">
+                <h1 class="privateClipboard__title projectTitle">Private Clipboard</h1>
+                <p class="privateClipboard__description"></p>
+            </div>
+        </div>
+        <div class="projectsContainer__quotemark projectContainer">
+                <img>
+                <div class="quotemark__body">
+                    <h1 class="quotemark__title projectTitle">Quotemark</h1>
+                    <p class="quotemark__description"></p>
+                </div>
+        </div> 
     </div>
-    <div>This is a test.</div>
-    <footer>
-        This is the footer
-    </footer>
+    </div>
 </body>
 </html>
