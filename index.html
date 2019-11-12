@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/slideshow.css">
     <title>Haskin's Portfolio</title>
 </head>
 <body>
@@ -26,7 +27,15 @@
     <div class="projectsContainer">
         <h1 class="projectsContainer__title">Projects</h1>
         <div class="projectsContainer__bulletJournal projectContainer">
+            <img class="projectImage" src="./images/bullet-journal-1.png">
+            <img class="projectImage" src="./images/bullet-journal-2.png">
             <img class="projectImage" src="./images/bullet-journal-3.png">
+             <!-- Next and previous buttons -->
+             <div class = scrollButtons>
+                <a class="prevButton">&#10094;</a>
+                <span class="buttonSpacer"></span>
+                <a class="nextButton">&#10095;</a>
+            </div>
             <div class="bulletJournal__body">
                 <h1 class="bulletJournal__title projectTitle">Bullet Journal</h1>
                 <p class="bulletJournal__description">This is a test</p>
@@ -43,6 +52,11 @@
             <div class="privateClipboard__body">
                 <h1 class="privateClipboard__title projectTitle">Private Clipboard</h1>
                 <p class="privateClipboard__description"></p>
+                <div class="projectLogos">
+                    <img class="projectLogos__logo" src="./logos/js-logo.png">
+                    <img class="projectLogos__logo" src="./logos/html-5-logo.png">
+                    <img class="projectLogos__logo" src="./logos/css-3-logo.png">
+                </div>
             </div>
         </div>
         <div class="projectsContainer__quotemark projectContainer">
@@ -50,9 +64,18 @@
                 <div class="quotemark__body">
                     <h1 class="quotemark__title projectTitle">Quotemark</h1>
                     <p class="quotemark__description"></p>
+                    <div class="projectLogos">
+                        <img class="projectLogos__logo" src="./logos/js-logo.png">
+                        <img class="projectLogos__logo" src="./logos/html-5-logo.png">
+                        <img class="projectLogos__logo" src="./logos/css-3-logo.png">
+                    </div>
                 </div>
         </div> 
     </div>
     </div>
 </body>
+
+<script src="./js/slideshow.js"></script>
 </html>
+
+ 
