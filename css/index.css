@@ -11,6 +11,8 @@ body {
     margin:auto;
     border-radius: 5px;
     background-color: #7fbf7f;
+    /* display:flex;
+    flex-direction: column; */
 }
 
 .splashPage{
@@ -52,10 +54,35 @@ body {
     color:#004000;
 }
 .projectContainer{
-    width:95%;
+    width:98%;
     height:100%;
     margin-bottom:15px;
     border-radius: 10px;
     background-color:#e5f2e5;
+    display:flex;
 }
 
+.projectImage{
+    height:100%;
+    width:60%;
+}
+
+.bulletJournal__body{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+}
+
+.bulletJournal__description{
+    flex:1;
+}
+
+.projectLogos{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.projectLogos__logo{
+    width:60px;
+    height:60px;
+}
