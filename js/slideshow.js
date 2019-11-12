@@ -15,6 +15,19 @@ const showSlide = (slideNumber, projectContainerClass) => {
     // console.log(imageNode);
 }
 
+const defualtSlides = () => {
+    const containers = [".projectsContainer__bulletJournal",
+                        ".projectsContainer__quotemark",
+                        ".projectsContainer__privateClipboard"];
+    containers.forEach( (containerClass) => {
+        const projectContainer = document.querySelector(containerClass);
+        //Selects the first image in the project container
+        const defaultNode = projectContainer.querySelectorAll(".projectImage")[0];
+        defaultNode.style.display = "inline";
+    });
+}
+
+defualtSlides();
 // showSlide(bulletSlide, projectContainer);
 document.querySelector(".prevButton").addEventListener("click", (event)=>{
     projectContainer = event.srcElement.parentElement
