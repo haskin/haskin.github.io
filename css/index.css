@@ -79,6 +79,10 @@ body {
     display:none;
 }
 
+/* .projectImage:active{
+    transform: scale(2);
+} */
+
 .projectContainer__body{
     width:40%;
     display:flex;
@@ -88,6 +92,7 @@ body {
 
 .projectTitle{
     text-align: center;
+    color: #001d00;
 }
 
 .projectDescription{
@@ -108,11 +113,12 @@ body {
     /* 60%(.project image width
         of 98%(project container width*/
     width:44.5%; 
-    height:350px; /*Should be the same as .projectContainer height*/
+    top:20%; /*Should be the same as .projectContainer height */
     /* margin:auto; */
     display:flex;
     position:absolute;
     align-items:center;
+    /* height:auto; */
     /* top:25%; */
 }
 
@@ -144,3 +150,22 @@ body {
 .prevButton:hover, .nextButton:hover {
     background-color: rgba(121, 121, 121, 0.589);
   }
+
+#imageZoomContainer{
+    position:absolute;
+    /* display:flex;
+    justify-content: center;
+    align-content: center; */
+    /* osition:absolute;
+    display:inline;p */
+    /* background-color: black; */
+    width:80%;
+    height:500px;
+    z-index:1; /*Brings to front*/
+    top:25%;
+    left:10%;
+    display:none;
+    /* display:flex;
+    justify-content: center;
+    align-content: center; */
+}
