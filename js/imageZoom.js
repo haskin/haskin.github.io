@@ -12,21 +12,15 @@ function createImageZoom(image){
     imageZoomContainer.justifycontent="center";
     imageZoomContainer.aligncontent="center";
 
-    //TODO:This may be bad form because it's always listening to every click
     //Listens for a click on the entire page
-    document.body.addEventListener('click', () => {
+    document.body.addEventListener('click', function handler(e){
         //Removes the imageCopy from imageZoomContainer
         imageCopy.remove();
         imageZoomContainer.style.display="none";
-    }, true); 
-
-    //Listens for a click on the entire page
-    // document.getElementById("imageZoomContainer").addEventListener('click', () => {
-    //     //Removes the imageCopy from imageZoomContainer
-    //     imageCopy.remove();
-    //     imageZoomContainer.style.display="none";
-    // }); 
-}
+        //Removes the event listener after it's triggered
+        e.currentTarget.removeEventListener(e.type, handler, true);
+    }, true);
+};
 
 document.querySelectorAll(".projectImage").forEach( (projectImage) => {
     projectImage.addEventListener("click", (event)=>{
