@@ -1,18 +1,32 @@
-let bulletSlide = 0;
-let quoteSlide = 0;
-let clipboardSlide = 0;
-
-const showSlide = (slideNumber, projectContainerClass) => {
-    const projectContainer = document.querySelector(".projectsContainer__bulletJournal");
+const changeSlide = (projectContainerClass, button) => {
+    const query = "." + projectContainerClass;
+    const projectContainer = document.querySelector(query);
     const imageNodeList = projectContainer.querySelectorAll(".projectImage");
-    /* Prevents undefined if slideNumber is first imageNode [0]*/
-    const prevNode = imageNodeList[slideNumber-1] || 
-                     imageNodeList[imageNodeList.length-1];
-    console.log(prevNode);
-    const imageNode = imageNodeList[slideNumber];
-    imageNode.style.display = "inline";
-    bulletSlide = slideNumber;
-    // console.log(imageNode);
+    let currNode = null;
+    let currIndex = null;
+    for(let index = 0; index < imageNodeList.length; index++){
+        
+        if(imageNodeList[index].style.display != "none" 
+            && imageNodeList[index].style.display !=""){ //some nodes "" instead of none
+            currNode = imageNodeList[index];
+            currIndex = index;
+            break;
+        }
+    }
+    let newNode = null;
+    if(button === "prev"){
+        // prevNode = imageNodeList[slideNumber];
+        newNode = imageNodeList[currIndex-1] || 
+                    imageNodeList[imageNodeList.length-1];
+    }
+    else if(button ==="next"){
+        /* Prevents undefined if slideNumber is first imageNode [0]*/
+        newNode = imageNodeList[((currIndex + 1) % imageNodeList.length)];
+    }
+    else return;
+
+    currNode.style.display="none";
+    newNode.style.display = "inline";
 }
 
 const defualtSlides = () => {
@@ -28,15 +42,15 @@ const defualtSlides = () => {
 }
 
 defualtSlides();
-// showSlide(bulletSlide, projectContainer);
+
 document.querySelector(".prevButton").addEventListener("click", (event)=>{
     projectContainer = event.srcElement.parentElement
                         .parentElement.classList[0];
-    showSlide(bulletSlide, projectContainer);
+    changeSlide(projectContainer, "prev");
 }); 
 
 document.querySelector(".nextButton").addEventListener("click", (event)=>{
     projectContainer = event.srcElement.parentElement
                         .parentElement.classList[0];
-    console.log(projectContainer);
+    changeSlide(projectContainer, "next");
 }); 
