@@ -43,14 +43,29 @@ const defualtSlides = () => {
 
 defualtSlides();
 
-document.querySelector(".prevButton").addEventListener("click", (event)=>{
-    projectContainer = event.srcElement.parentElement
-                        .parentElement.classList[0];
-    changeSlide(projectContainer, "prev");
-}); 
+// document.querySelector(".prevButton").addEventListener("click", (event)=>{
+//     projectContainer = event.srcElement.parentElement
+//                         .parentElement.classList[0];
 
-document.querySelector(".nextButton").addEventListener("click", (event)=>{
-    projectContainer = event.srcElement.parentElement
-                        .parentElement.classList[0];
-    changeSlide(projectContainer, "next");
-}); 
+//     console.log(projectContainer);
+//     changeSlide(projectContainer, "prev");
+// }); 
+
+document.querySelectorAll(".prevButton").forEach ((button) => {
+    button.addEventListener("click", (event)=>{
+        projectContainer = event.srcElement.parentElement
+                            .parentElement.classList[0];
+        // console.log(projectContainer);
+        changeSlide(projectContainer, "prev");
+    });
+});
+
+
+document.querySelectorAll(".nextButton").forEach ((button) => {
+    button.addEventListener("click", (event)=>{
+        projectContainer = event.srcElement.parentElement
+                            .parentElement.classList[0];
+        // console.log(projectContainer);
+        changeSlide(projectContainer, "next");
+    });
+});
