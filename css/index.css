@@ -98,11 +98,15 @@ body {
     top:20%; Should be the same as .projectContainer height */
     /* margin:auto; */
     width:59%;
-    height:100%;
+    top:40%;
+    /*Event though this is better for positioning,
+     * it breaks the imageZoom click handler by 
+     * being on top of the image.*/
+    /* height:100%; */
+    /* align-items:center; */
     margin:auto;
     display:flex;
     position:absolute;
-    align-items:center;
 }
 
 /* Next & previous buttons */
