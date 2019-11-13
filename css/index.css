@@ -7,13 +7,17 @@ body {
 
 #imageZoomContainer{
     position:fixed; /*Centers in center of window*/
-    top: 25%; /*Centers in vertically */
-    left: 25%; /*Centers horizontally*/
-    width: 50%;
+    /*Setting everything to 0 centers horizontally
+     *and vertically in using margin:auto*/
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
     height:500px;
     z-index:1; /*Brings to front*/
-    display:none;
     background-color: rgba(37, 37, 37, 0.89);
+    display:none;
 }
 
 .mainBody{
