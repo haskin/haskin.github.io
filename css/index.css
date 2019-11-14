@@ -73,19 +73,17 @@ h1 {
 }
 
 .projectsContainer{
-    width:95%;
-    margin: auto;
+    width:100%;
     color:black;
     display:flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    /* background-color:#e5f2e5; */
-    border-radius: 10px;
-    position:relative;
 }
 .projectsContainer__title{
     color:#001d00;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 .projectContainer{
     width:98%;
@@ -96,7 +94,7 @@ h1 {
     background-color:#e5f2e5;
     display:flex;
     /* justify-content: center; */
-    align-content: center;
+    /* align-content: center; */
     position:relative
 }
 
@@ -177,10 +175,6 @@ h1 {
     margin-bottom:0; /*Moves .projectLinks up*/
 }
 
-.projectDescription{
-    flex:1;
-}
-
 .projectLogos{
     width:100%;
     display:flex;
@@ -205,3 +199,10 @@ h1 {
     line-height: 40%; 
 }
 
+.projectDescription{
+    flex:1;
+    position:relative;
+    /*Centering because middot takes space 
+     *above description*/
+    bottom: 12px; 
+}

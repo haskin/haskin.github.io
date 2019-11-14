@@ -8,9 +8,10 @@
 }
 
 .navbar__name{
+    position:relative;
+    left: 5px;
     font-size:28px;
     color:#001d00;
-    left: 5px;
     flex:1;
     font-family: "Liberata";
     /* border:5px red solid; */
@@ -18,6 +19,9 @@
 
 .navbar__links>a>img{
     /* position: absolute; */
+    position:relative;
+    right: 5px;
+    top:2px; /*Centering*/
     height:35px;
     border: 1px #e5f2e5 solid;
     border-radius:50%;
