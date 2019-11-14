@@ -1,0 +1,29 @@
+.navbar{
+    border-radius: 5px 5px 0 0;
+    background-color:#e5f2e5;
+    height:50px;
+    display:flex;
+    align-items: center;
+    /* color:#001d00; */
+}
+
+.navbar__name{
+    font-size:30px;
+    color:#001d00;
+    left: 5px;
+    flex:1;
+    /* border:5px red solid; */
+}
+
+.navbar__links>a>img{
+    /* position: absolute; */
+    height:35px;
+    border: 1px #e5f2e5 solid;
+    border-radius:50%;
+}
+
+.navbar__links>a>img:hover{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border: 1px black solid;
+    
+}

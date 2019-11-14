@@ -154,8 +154,10 @@ body {
 }
 
 .projectTitle{
+    margin:0;
     text-align: center;
     color: #001d00;
+    margin-bottom:0; /*Moves .projectLinks up*/
 }
 
 .projectDescription{
@@ -172,5 +174,17 @@ body {
     height:60px;
 }
 
+.projectLinks{
+    text-align: center;
+}
 
+.projectLinks a{
+    text-decoration: none;
+}
+.projectLinks__middot{
+    /* In order to position middot correctly*/
+    vertical-align: top;
+    font-size: 50px;
+    line-height: 40%; 
+}
 
