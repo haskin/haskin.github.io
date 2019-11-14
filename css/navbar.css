@@ -8,10 +8,11 @@
 }
 
 .navbar__name{
-    font-size:30px;
+    font-size:28px;
     color:#001d00;
     left: 5px;
     flex:1;
+    font-family: "Liberata";
     /* border:5px red solid; */
 }
 
