@@ -34,10 +34,16 @@
 
 @media(max-width: 768px){
 
+    .splashPage{
+        position:relative;
+    }
     .splashPage__image{
         width:40%;
-        height:40%;
-    }    
+    }
+    
+    .splashPage__splashBody{
+        width:60%;
+    }
 
     .projectContainer{
         width:95%;
@@ -60,7 +66,3 @@
     } */
 
 }
-
-/* .mainBody{
-    border:5px red solid;
-} */
