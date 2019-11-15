@@ -13,6 +13,8 @@ const changeSlide = (projectContainerClass, button) => {
             break;
         }
     }
+
+    
     let newNode = null;
     if(button === "prev"){
         // prevNode = imageNodeList[slideNumber];
@@ -53,9 +55,9 @@ defualtSlides();
 
 document.querySelectorAll(".prevButton").forEach ((button) => {
     button.addEventListener("click", (event)=>{
+        //Gets the unique class name for the projectContainer
         projectContainer = event.srcElement.parentElement
-                            .parentElement.classList[0];
-        // console.log(projectContainer);
+                            .parentElement.parentElement.classList[0];
         changeSlide(projectContainer, "prev");
     });
 });
@@ -63,8 +65,9 @@ document.querySelectorAll(".prevButton").forEach ((button) => {
 
 document.querySelectorAll(".nextButton").forEach ((button) => {
     button.addEventListener("click", (event)=>{
+        //Gets the unique class name for the projectContainer
         projectContainer = event.srcElement.parentElement
-                            .parentElement.classList[0];
+                            .parentElement.parentElement.classList[0];
         // console.log(projectContainer);
         changeSlide(projectContainer, "next");
     });

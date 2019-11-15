@@ -119,15 +119,21 @@ h1 {
     /* border: 5px red solid; */
 }
 
-.projectImage{
-   
-    position:relative;
-    margin: auto;
-    /* margin-top:auto;
-    margin-bottom:auto; */
-    /* top:5px; */
+.projectImageContainer{
+    position: relative; 
+    width:59.5%;
     height:98%;
-    width:59%;
+    left: .5%;
+    top:1%;
+    /*To vertically allign .scrollButton*/
+    display:flex; 
+    align-items: center;
+}
+.projectImage{
+    /* position:relative; */
+    margin: auto;
+    height:100%;
+    width:100%;
     display:none;
 }
 
@@ -137,8 +143,8 @@ h1 {
     /* width:44.5%; 
     top:20%; Should be the same as .projectContainer height */
     /* margin:auto; */
-    width:59%;
-    top:40%;
+    width:100%;
+    /* top:50%; */
     /*Event though this is better for positioning,
      * it breaks the imageZoom click handler by 
      * being on top of the image.*/

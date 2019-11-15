@@ -1,7 +1,6 @@
 function createImageZoom(image){
     //Copies image so original image isn't changed
     const imageCopy = image.cloneNode(true);
-    
     // console.log(imageCopy);
     const imageZoomContainer = document.getElementById("imageZoomContainer");
     imageCopy.id = "imageZoomContainer__image";
@@ -9,7 +8,7 @@ function createImageZoom(image){
     if(screen.width > 768)
         imageCopy.style.width = "auto";
     //Most Tablet Screen
-    else if(screen.widht > 500)
+    else if(screen.width > 500)
         imageCopy.style.width = "75%";
     //Most Phones
     else
