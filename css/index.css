@@ -36,7 +36,8 @@ h1 {
     top:0;
     bottom:0;
     margin: auto; /* Will not center vertically and won't work in IE6/7. */
-    height:500px;
+    /* width: 50%; */
+    height:50%;
     z-index:1; /*Brings to front*/
     background-color: rgba(37, 37, 37, 0.89);
     display:none;

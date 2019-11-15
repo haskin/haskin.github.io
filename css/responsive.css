@@ -34,9 +34,6 @@
 
 @media(max-width: 768px){
 
-    .splashPage{
-        position:relative;
-    }
     .splashPage__image{
         width:40%;
     }
@@ -60,9 +57,5 @@
 
     .projectLogos{
         display:none;
-    }
-    /* .projectImage{
-        position:relative;
-    } */
-
+    } 
 }

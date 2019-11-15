@@ -1,11 +1,20 @@
 function createImageZoom(image){
     //Copies image so original image isn't changed
     const imageCopy = image.cloneNode(true);
+    
     // console.log(imageCopy);
     const imageZoomContainer = document.getElementById("imageZoomContainer");
     imageCopy.id = "imageZoomContainer__image";
-    //Resets the width from the original event elemnt
-    imageCopy.style.width = "auto";
+    //Desktop Screens
+    if(screen.width > 768)
+        imageCopy.style.width = "auto";
+    //Most Tablet Screen
+    else if(screen.widht > 500)
+        imageCopy.style.width = "75%";
+    //Most Phones
+    else
+        imageCopy.style.width = "100%"; 
+    // imageCopy.style.width="300px";
     imageZoomContainer.append(imageCopy);
     /*Centers the image and shows the zoomContainer*/
     imageZoomContainer.style.display="flex";
