@@ -68,15 +68,28 @@ h1 {
 .splashPage__splashBody{
     display:flex;
     flex-direction: column;
-}
+    position:relative;
+    padding-left:5px;
+    padding-right:5px;
+    /* border: 5px solid red;*/
+} 
 
 .splashPage__image{
-    /* border: 2px solid red; */
-    border-radius: 90%;
-    width:180px;
-    height:180px;
+    position:relative;
+    padding-left:5px;
+    width:20%;
+    height:20%;
 }
 
+.splashBody__title{
+    margin-bottom:0px;
+    /* text-align: center; */
+}
+
+.splashBody__description{
+    position:relative;
+    bottom:10px;
+}
 .projectsContainer{
     width:100%;
     color:black;

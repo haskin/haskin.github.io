@@ -33,6 +33,12 @@
 }
 
 @media(max-width: 768px){
+
+    .splashPage__image{
+        width:40%;
+        height:40%;
+    }    
+
     .projectContainer{
         width:95%;
         position:relative;
