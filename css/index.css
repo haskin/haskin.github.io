@@ -232,7 +232,7 @@ h1 {
 
 .projectDescription{
     flex:1;
-    /* position:relative; */
+    position:relative;
     /*Centering because middot takes space 
      *above description*/
     bottom: 12px; 

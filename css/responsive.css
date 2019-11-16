@@ -51,6 +51,7 @@
         /* border: 5px red solid; */
     }
 
+    
     .projectImageContainer{
         /* position: relative; */
         /*Instead of doing bottom:5px
@@ -62,6 +63,7 @@
         height:250px;
         /* border-radius: 0 0 10px 10px; */
         border-radius: 10px;
+        
     }
 
     .projectImage{
@@ -76,4 +78,9 @@
     .projectLogos{
         display:none;
     } 
+
+    .projectDescription{
+        /*Brings .projectImageContainer higher*/
+        margin-bottom:2px;
+    }
 }
