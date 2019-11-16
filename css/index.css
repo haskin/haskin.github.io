@@ -226,6 +226,10 @@ h1 {
 .projectLinks a{
     text-decoration: none;
 }
+
+.projectLinks a:hover{
+    cursor:pointer;
+}
 .projectLinks__middot{
     /* In order to position middot correctly*/
     vertical-align: top;
