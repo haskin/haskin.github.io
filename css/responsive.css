@@ -44,21 +44,26 @@
 
     .projectContainer{
         width:95%;
-        height:100%;
-        top:0%;
-        position:relative;
+        height:auto;
         flex-direction:column-reverse;
         align-items:center;
         /* height:auto; */
         /* border: 5px red solid; */
     }
 
-    .projectImage{
-        position:relative;
-        /*Brings it into project container on Firefox*/
-        bottom:2%; 
-        /* display:inline; */
+    .projectImageContainer{
+        /* position: relative; */
+        /*Instead of doing bottom:5px
+         *because it breaks in Firefox*/
+        top:-5px;
+        /* bottom: 5px; */
+        left:0px; /*Reset left parameter*/
+        width:98%;
+        height:250px;
+        /* border-radius: 0 0 10px 10px; */
+        border-radius: 10px;
     }
+    
     .projectContainer__body{
         width:100%;
         position:relative;
