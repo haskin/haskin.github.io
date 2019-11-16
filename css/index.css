@@ -107,23 +107,28 @@ h1 {
 }
 .projectContainer{
     /* width:98%; */
+    position:relative;
     width:75%;
-    height:350px;
+    /* max-height:350px; */
+    height:auto;
+    /* max-height:500px; */
     margin-bottom:15px;
     border-radius: 10px;
     background-color:#e5f2e5;
     display:flex;
     /* justify-content: center; */
-    /* align-content: center; */
+    /* align-items: center; */
     /* border: 5px red solid; */
 }
 
 .projectImageContainer{
     position: relative; 
     width:59.5%;
-    height:98%;
-    left: .5%;
-    top:1%;
+    /* height:98%; */
+    /* max-height:350px; */
+    /* left: .5%; */
+    /* top:1%; */
+    border-radius:10px 0 0 10px;
     /*To vertically allign .scrollButton*/
     display:flex; 
     align-items: center;
@@ -131,11 +136,9 @@ h1 {
     background-color:#001d00;; 
 }
 .projectImage{
-    /* position:fixed; */
-    /* display:block; */
-    /* position:relative; */
     margin: auto;
-    height:98%;
+    /* max-height:350px; */
+    /* height:10%; */
     max-width: 100%;
     /* width:100%; */
     display:none;

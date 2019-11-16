@@ -4,6 +4,7 @@ function createImageZoom(image){
     // console.log(imageCopy);
     const imageZoomContainer = document.getElementById("imageZoomContainer");
     imageCopy.id = "imageZoomContainer__image";
+    imageCopy.style.height="100%";
     //Desktop Screens
     if(screen.width > 768)
         imageCopy.style.width = "auto";
