@@ -1,6 +1,6 @@
 .navbar{
     border-radius: 5px 5px 0 0;
-    background-color:#e5f2e5;
+    background-color: hsl(0,0%, 95%);
     height:50px;
     display:flex;
     align-items: center;
@@ -11,7 +11,7 @@
     position:relative;
     left: 5px;
     font-size:28px;
-    color:#001d00;
+    color:black;
     flex:1;
     font-family: "Liberata";
     /* border:5px red solid; */
