@@ -21,6 +21,10 @@ html{
     /* background: linear-gradient(180deg, hsl(0, 0%, 3%), hsl(0, 0%, 45%)); */
     font-family: "OpenSans";
 }
+
+p {
+    line-height: 170%;
+}
 /* 
 body {
     position: relative;
