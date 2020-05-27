@@ -71,8 +71,9 @@ h1 {
     margin: auto;
     color:black;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color:hsl(0, 0%, 95%);
     background-color:var(--card-background);
     box-shadow: 0 0px 10px 3px rgba(0,0,0,0.25);
@@ -85,30 +86,51 @@ h1 {
     margin-bottom:15px;
 }
 
+.splashPage__image{
+    position:relative;
+    /* padding-left:5px; */
+    width:calc(50px + 10vw);
+    height:20%;
+}
+
 .splashPage__splashBody{
     display:flex;
     flex-direction: column;
     position:relative;
-    padding-left:5px;
-    padding-right:5px;
+    /* padding-left:5px;
+    padding-right:5px; */
     /* border: 5px solid red;*/
+    width:45%;
 } 
 
-.splashPage__image{
-    position:relative;
-    padding-left:5px;
-    width:20%;
-    height:20%;
-}
-
 .splashBody__title{
-    margin-bottom:0px;
+    margin:0px;
+    text-align: center;
     /* text-align: center; */
 }
 
 .splashBody__description{
     position:relative;
     bottom:10px;
+}
+
+@media only screen and (max-width: 1200px){
+    .splashPage__image{
+        width:calc(50px + 20vw);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .splashPage{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .splashPage__splashBody{
+    /* display:block; */
+        /* width:100vw; */
+        min-width:90%;
+    }
 }
 .projectsContainer{
     width:100%;

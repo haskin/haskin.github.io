@@ -34,9 +34,9 @@
 
 @media(max-width: 768px){
 
-    .splashPage__image{
+    /* .splashPage__image{
         width:40%;
-    }
+    } */
     
     .splashPage__splashBody{
         width:60%;
@@ -83,5 +83,6 @@
     .projectDescription{
         /*Brings .projectImageContainer higher*/
         margin-bottom:2px;
+        width:90%;
     }
 }
