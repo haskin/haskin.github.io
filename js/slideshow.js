@@ -32,7 +32,8 @@ const changeSlide = (projectContainerClass, button) => {
 }
 
 const defualtSlides = () => {
-    const containers = [".projectsContainer__bulletJournal",
+    const containers = [".projectsContainer__jaffaWebsite",
+                        ".projectsContainer__bulletJournal",
                         ".projectsContainer__tlcExpiration",
                         ".projectsContainer__quotemark",
                         ".projectsContainer__privateClipboard"];
